@@ -8,7 +8,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <asp:Label ID="Label2" runat="server" Text="Member Page" Width="445px" BackColor="#338BDB" Height="36px" Font-Bold="True" Font-Size="Large" ForeColor="White"></asp:Label>
+        <asp:Label ID="Label2" runat="server" Text="Register Page" Width="445px" BackColor="#338BDB" Height="36px" Font-Bold="True" Font-Size="Large" ForeColor="White"></asp:Label>
         <br />
         <br />
         <asp:Label ID="Label3" runat="server" Text="Enter username: "></asp:Label>
@@ -27,7 +27,7 @@
         <br />
         <asp:Button ID="btnRegister" runat="server" Text="Register" OnClick="btnRegister_Click" />
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:Label ID="lblRegister" runat="server" Text="Label"></asp:Label>
+        <asp:Label ID="lblRegister" runat="server" ForeColor="Red"></asp:Label>
     </form>
 </body>
 </html>
