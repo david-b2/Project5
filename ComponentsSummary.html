@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table {            
+            background-color: white;   
+            border: 1px solid gray;  
+            border-spacing: 0px; 
+            font-family: Arial, Helvetica, italic      
+        }
+
+        th {
+            background-color: #E6E6E6;
+            border: 1px solid gray;
+            font-size:20px;
+            color: black;
+            padding: 10px;
+        }
+       
+        td {
+            border: 1px solid gray;
+            padding: 10px;
+            text-align: center;
+            font-size:15px;
+            vertical-align: middle;
+        }
+
+        .th-title {
+            background-color: #E6E6E6;
+            font-size:20px;
+            border: 1px solid gray;
+            color: black;
+        }        
+        </style>
+</head>
+<body>
+
+
+
+
+<table>
+
+    <tr>
+        <th class="th-title" colspan="5">Application and Components Summary Table</th>
+    </tr>
+    <tr>
+        <th class="th-title" colspan="5">The application is deployed at: http://webstrarX.fulton.asu.edu/Default.aspx (X is your site #)</th>
+    </tr>
+    <tr>
+        <th class="th-title" colspan="5">Percentage of contribution: Member 1 name: 34%, Member 2 name: 30%, Member 3 name: 30% The percentage will be used to scale the grade</th>
+    </tr>
+    <tr>
+        <th>
+            Provider name
+        </th>
+        <th>
+            Page and component type, e.g., aspx, DLL, SVC, etc.
+        </th>
+		<th>Component description: What does the component do? What are input/parameter and output/return value?</th>
+        <th>Actual resources and methods used to implement the component and where this component is used.</th>
+        
+    </tr>
+
+     <tr>
+        <td>David</td>
+        <td>....</td>
+		<td>....</td>
+        <td>....</td>
+    </tr>
+
+    <tr>
+        <td>David</td>
+        <td>....</td>
+		<td>....</td>
+        <td>....</td>
+    </tr>
+
+    <tr>
+        <td>Mohammed</td>
+        <td>....</td>
+		<td>....</td>
+        <td>....</td>
+    </tr>
+
+    <tr>
+        <td>Mohammed</td>
+        <td>....</td>
+        <td>....</td>
+        <td>....</td>
+    </tr>
+
+    <tr>
+        <td>Erick</td>
+        <td>StaffPage/StaffLogin.aspx</td>
+        <td>Page grants access to authenticated staff members to Add new staff members to the XML used for logging members in.
+            Once added the xml is updated and appended with the new staff members credentials allowing them access to this page upon 
+            authentication. 
+            <br/>
+            Input: New user credentials, username and password as string.
+            Output: Updated XML File with newly added staff member credentials.
+        </td>
+        <td>GUI Design, Web.config modification and C# code behind GUI</td>
+    </tr>
+    
+    <tr>
+        <td>Erick</td>
+        <td>XML File Manipulation: Staff.XML</td>
+        <td>Utilized Staff.XML File to check if credentials of staff member are existent withtin the XML file to either grant or deny authentication if credentials present or not.
+            Additionally allows appending to this file of more stafff members in xml format  once staff member is granted access, to allow new staff members to login to the StaffPage.
+            <br/>
+            Input: Staff Member credentials: String username and password.
+            Output: Resulting landing page, Updated Staff.XML file.
+        </td>
+        <td>C# code behind GUI, Heavy use of System.Xml;</td>
+    </tr>
+    <tr>
+        <td>Erick</td>
+        <td>Partial design of Default.aspx</td>
+        <td>Designed minor details of Default.aspx page for users to see at first hand.
+            <br/>
+            Input: User Interaction
+            Output: Resulting landing page, upon user action.
+        </td>
+        <td>GUI Design, and C# code behind GUI</td>
+    </tr>
+    <tr>
+        <td>Erick</td>
+        <td>Partial design of Cookies: upon login to StaffPage</td>
+        <td>Utilized cookies to store logged in Username temporarily.
+            <br/>
+            Input: UserName: String
+            Output: In Browser User UserName
+        </td>
+        <td>C# code behind GUI</td>
+    </tr>
+</table>
+
+
+
+</body>
+</html>
