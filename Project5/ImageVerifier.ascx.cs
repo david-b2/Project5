@@ -25,6 +25,7 @@ namespace Project5
                 Label1.ForeColor = System.Drawing.Color.Green;
                 Session["verified"] = true;
                 this.Parent.FindControl("btnRegister").Visible = true;
+                this.btnSubmit.Visible = false;
             }
             else
             {
