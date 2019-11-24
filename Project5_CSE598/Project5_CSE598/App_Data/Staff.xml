@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Staff>
+  <Member>
+    <Name>
+      Teaching-Assistant
+    </Name>
+    <UserName>
+      TA
+    </UserName>
+    <Password>
+      Cse445ta!
+    </Password>
+  </Member>
+ 
+</Staff>
