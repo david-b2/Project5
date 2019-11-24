@@ -1,5 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="Project5.Register" %>
-
+<%@ Register TagPrefix = "img" TagName="imageVerifier" src="ImageVerifier.ascx" %>
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -25,7 +25,10 @@
         <asp:TextBox ID="tbxPasswordConf" runat="server"></asp:TextBox>
         <br />
         <br />
-        <asp:Button ID="btnRegister" runat="server" Text="Register" OnClick="btnRegister_Click" />
+        <img:imageVerifier runat="server" />
+        <br />
+        <br />
+        <asp:Button ID="btnRegister" runat="server" Text="Register" OnClick="btnRegister_Click" Visible="False" BorderColor="Blue" ForeColor="Blue" />
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:Label ID="lblRegister" runat="server" ForeColor="Red"></asp:Label>
     </form>

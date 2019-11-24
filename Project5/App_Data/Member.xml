@@ -24,4 +24,20 @@
     <username>TestUser</username>
     <password>rSbztu4Rm7iVrecsKHzRtS+z61msYKVFvQhKcdJqMIs=</password>
   </user>
+  <user>
+    <username>dav5</username>
+    <password>rSbztu4Rm7iVrecsKHzRtWD8xVxbUZwg5rCvRFazSuU=</password>
+  </user>
+  <user>
+    <username>TestUser2</username>
+    <password>+rU1KRrn87+egNKwTKmZ+g==</password>
+  </user>
+  <user>
+    <username>t2</username>
+    <password>rSbztu4Rm7iVrecsKHzRtWD8xVxbUZwg5rCvRFazSuU=</password>
+  </user>
+  <user>
+    <username>d4</username>
+    <password>2uGdvJnLw6lFIPBBv7Hh9w==</password>
+  </user>
 </users>

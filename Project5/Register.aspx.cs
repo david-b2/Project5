@@ -13,7 +13,6 @@ namespace Project5
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -30,7 +29,7 @@ namespace Project5
                     string result = Reg.register(tbxUsername.Text, tbxPassword.Text);
                     if (result == "registered")
                     {
-                        Response.Redirect("Login.aspx");
+                       Response.Redirect("Login.aspx");
                     }
                     else
                     {
@@ -63,6 +62,8 @@ namespace Project5
             }
             try
             {
+                string encryptedPassword = Encryption.EncryptionDecryption.encrypt(password);
+                //string encryptedPassword = password;
                 //user data file exists; adds new user to xml file
                 if (File.Exists(userData))
                 {
@@ -89,7 +90,7 @@ namespace Project5
                         users.Add(new XElement("user",
                                     new XElement("username", username),
                                     //encrypt password with DLL
-                                    new XElement("password", Encryption.EncryptionDecryption.encrypt(password))));
+                                    new XElement("password", encryptedPassword)));
                         xdoc.Save(userData);
                         ret = string.Format("registered");
                     }
@@ -101,7 +102,7 @@ namespace Project5
                                 new XElement("user",
                                 new XElement("username", username),
                                 //encrypt password with DLL
-                                new XElement("password", Encryption.EncryptionDecryption.encrypt(password)))));
+                                new XElement("password", encryptedPassword))));
                     xdoc.Save(userData);
                     ret = string.Format("registered");
                 }
