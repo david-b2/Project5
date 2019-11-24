@@ -18,5 +18,18 @@ namespace Project5
         {
 
         }
+
+        protected void btnRegister_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+
+            }
+            catch
+            {
+                lblRegister.Text = "Error creating account";
+            }
+        }
     }
 }
